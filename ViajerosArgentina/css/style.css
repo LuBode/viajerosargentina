@@ -1,0 +1,861 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Estilo en General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0px 10px 0;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: black;
+  font-size: 3vw;
+  text-align: center;
+}
+
+h2 {
+  color: #0f0f0f;
+  font-size: 2vw;
+  text-align: center;
+}
+
+
+/* Estilos en el Banner, incluye logo y nombre y pestañas */
+
+.banner {
+  display: inline-block;
+  opacity: 0.9;
+  width: 100%;
+  height: auto;
+  position: relative;
+  max-height: 300px;
+}
+
+.banner img {
+  width: 100%;
+  height: 600px;
+}
+
+.header {
+  color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.contenedor-logo {
+  position: absolute;
+  top: 90%;
+  /* Centra verticalmente el contenedor del logo */
+  left: 60%;
+  /* Centra horizontalmente el contenedor del logo */
+  transform: translate(-45%, -50%);
+  /* Centra completamente el contenedor del logo */
+  z-index: 10;
+  padding: 10px;
+  /* Ajusta el relleno del contenedor del logo */
+  border-radius: 10px;
+}
+
+.contenedor-logo img {
+  width: 200px;
+  /* Ajusta el ancho del logo */
+  height: auto;
+  /* Se mantiene la proporción */
+  opacity: 0.8;
+  left: auto;
+}
+
+.nombre-logo {
+  font-size: 55px;
+  /* Ajusta el tamaño del texto del nombre del logo */
+  color: #d1f1f7;
+  /* Cambia el color del texto según tu preferencia */
+  top: 60%;
+  /* Centra verticalmente el contenedor del logo */
+  left: 60px;
+  /* Centra horizontalmente el contenedor del logo */
+  transform: translate(-30%, -50%);
+}
+
+.nombre-logo-autos {
+  font-size: 55px;
+  /* Ajusta el tamaño del texto del nombre del logo */
+  color: #080808;
+  /* Cambia el color del texto según tu preferencia */
+  top: 60%;
+  /* Centra verticalmente el contenedor del logo */
+  left: 60px;
+  /* Centra horizontalmente el contenedor del logo */
+  transform: translate(-30%, -50%);
+}
+
+.pestanas {
+  position: relative;
+  bottom: 50px;
+  /* Las pestañas estarán pegadas al borde inferior */
+  width: 100%;
+  /* Las pestañas ocuparán todo el ancho del contenedor */
+  text-align: center;
+}
+
+.pestaña {
+  display: inline-block;
+  width: 15%;
+  padding: 5px 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-right: 0px;
+}
+
+.pestaña:hover {
+  background-color: #96e9f7;
+}
+
+
+/* Estilos para la barra de búsqueda */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 600px;
+  /* Establece el ancho máximo de la barra de búsqueda */
+  margin: 0 auto;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  border: 2px solid #fbb4ae;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #6af199;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para los resultados de búsqueda */
+#resultados {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+/* Estilos para la traslacion */
+
+/* slide de fotos */
+img {
+  max-width: 781%;
+}
+
+.container-all {
+  position: relative;
+  max-width: 780px;
+  width: 780%;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  transition: all 800ms;
+  animation: autoplay 10s infinite alternate;
+
+}
+
+.item-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 10px;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.pagination-item:hover {
+  transform: scale(2);
+}
+
+.pagination-item img {
+  display: inline-block;
+  max-width: none;
+  height: 100%;
+  transform: scale(1);
+  opacity: 0;
+  transition: ALL 300ms;
+}
+
+.pagination-item:hover img {
+  opacity: 1;
+  transform: scale(1)
+}
+
+input[id="1"]:checked~.slide {
+  animation: none;
+  transform: translate3d(0, 0, 0);
+}
+
+/* se pone blanco cuando hacemos click el boton */
+input[id="1"]:checked~.pagination .pagination-item [for="1"] {
+  background: #fff;
+}
+
+input[id="2"]:checked~.slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked~.pagination .pagination-item [for="2"] {
+  background: #fff;
+}
+
+input[id="3"]:checked~.slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked~.pagination .pagination-item [for="3"] {
+  background: #fff;
+}
+
+input[id="4"]:checked~.slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked~.pagination .pagination-item [for="4"] {
+  background: #fff;
+}
+
+input[id="5"]:checked~.slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked~.pagination .pagination-item [for="5"] {
+  background: #fff;
+}
+
+input[id="6"]:checked~.slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="6"]:checked~.pagination .pagination-item [for="6"] {
+  background: #fff;
+}
+
+input[id="7"]:checked~.slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 6), 0, 0);
+}
+
+input[id="7"]:checked~.pagination .pagination-item [for="7"] {
+  background: #fff;
+}
+
+input[id="8"]:checked~.slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 7), 0, 0);
+}
+
+input[id="8"]:checked~.pagination .pagination-item [for="8"] {
+  background: #fff;
+}
+
+
+/* animacion de las fotos */
+@keyframes autoplay {
+
+  0%,
+  100% {
+    transform: translate3d(calc(-100% * 0), 0, 0);
+  }
+
+  12.5% {
+    transform: translate3d(calc(-100% * 1), 0, 0);
+  }
+
+  25% {
+    transform: translate3d(calc(-100% * 2), 0, 0);
+  }
+
+  37.5% {
+    transform: translate3d(calc(-100% * 3), 0, 0);
+  }
+
+  50% {
+    transform: translate3d(calc(-100% * 4), 0, 0);
+  }
+
+  62.5% {
+    transform: translate3d(calc(-100% * 5), 0, 0);
+  }
+
+  75% {
+    transform: translate3d(calc(-100% * 6), 0, 0);
+  }
+
+  87.5% {
+    transform: translate3d(calc(-100% * 7), 0, 0);
+  }
+}
+
+
+/* Estilos para Contacto */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container,
+.message-container {
+  width: 48%;
+  /* Ajusta el ancho de las columnas según tus necesidades */
+}
+
+.contact-form {
+  max-width: 550px;
+  margin: 0;
+  padding: 20px;
+  background-color: #6af199;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  /* Ajuste del margen izquierdo */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.mensaje-imagen {
+  max-width: 60%;
+  /* Ajusta el ancho máximo de la imagen para que se ajuste al contenedor */
+  height: auto;
+  /* Permite que la altura se ajuste automáticamente según el ancho */
+  margin-top: 10px;
+  /* Margen superior para separar la imagen del contenido del mensaje */
+}
+
+.mensajesList {
+  max-width: 800px;
+  /* Ajusta este valor según el ancho deseado */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
+  padding: 0 20px;
+  /* Agrega un poco de espacio alrededor del contenido */
+}
+
+
+.form-group label,
+.form-group input[type="checkbox"] {
+  display: inline;
+}
+
+
+button[type="submit"] {
+  background-color: #fbb4ae;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #cf8e73;
+}
+
+.container {
+  display: flex;
+}
+
+.form-column {
+  flex: 1;
+  padding-right: 20px;
+  /* Espacio entre columnas */
+}
+
+.contact-column {
+  flex: 1;
+  padding: 20px;
+  margin: 200px auto;
+  justify-content: center;
+  /* Centrado horizontal */
+  align-items: center;
+  /* Centrado vertical */
+  height: 100%;
+  /* Asegura que ocupe toda la altura de su contenedor */
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Estilos autos */
+section {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.container-autos {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.autos {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.autos img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.info {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+/* Estilo atracciones */
+.container-atracciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Asegura que haya espacio entre los elementos */
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.box {
+  width: calc(40% - 20px);
+  /* Ancho del 50% menos el espacio */
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  /* Transición suave para animaciones */
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  /* Efecto de levantamiento al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* Sombra suave al pasar el mouse */
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.box h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.box p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* Estilos alojamientos */
+.container-alojamientos {
+  display: flex;
+  width: 90%;
+  margin: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.filters,
+.title,
+.photos {
+  padding: 20px;
+
+}
+
+.filters {
+  flex: 1;
+  background-color: #6af199;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.photos {
+  flex: 1;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photos img {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+
+.filters select,
+.filters input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+
+/* Estilos Pie de Pagina, incluye redes sociales */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: rgb(14, 14, 14);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #96e9f7;
+  height: auto;
+  position: relative;
+
+  margin: 0;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer .whatsapp-float {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 80px;
+  transform: translateX(-50%);
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 3px 3px 4px #999;
+}
+
+.whatsapp-float i {
+  margin-top: 8px;
+  font-size: 45px;
+}
+
+
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 36px;
+    /* Tamaño del texto en píxeles */
+  }
+
+  h2 {
+    font-size: 24px;
+    /* Tamaño del texto en píxeles */
+  }
+
+  .contenedor-logo img {
+    width: 200px;
+    /* Ajusta el ancho del logo */
+    height: auto;
+    /* Se mantiene la proporción */
+  }
+
+  .nombre-logo {
+    font-size: 55px;
+    text-align: center;
+    transform: translate(-25%, -20%);
+  }
+
+  .pestaña {
+    width: 15%;
+    /* Reducir el ancho relativo para más pestañas en línea */
+  }
+
+  .mensajesList {
+    max-width: 600px;
+    /* Ajusta el ancho para laptops */
+  }
+}
+
+/* Estilos para pantallas medianas (tablet) */
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 4vw;
+    /* Tamaño del texto en porcentaje del ancho de la pantalla */
+  }
+
+  h2 {
+    font-size: 3vw;
+    /* Tamaño del texto en porcentaje del ancho de la pantalla */
+  }
+
+  .contenedor-logo img {
+    width: 160px;
+    /* Ajusta el ancho del logo */
+    height: auto;
+    /* Se mantiene la proporción */
+  }
+
+  .nombre-logo {
+    font-size: 45px;
+    text-align: center;
+    transform: translate(-20%, -20%);
+  }
+
+  .nombre-logo-autos {
+    font-size: 45px;
+    text-align: center;
+    transform: translate(-20%, -20%);
+  }
+
+  .pestaña {
+    width: 20%;
+    /* Ajustar el ancho relativo para menos pestañas en línea */
+    margin-right: 5px;
+    /* Reducir el espacio entre pestañas */
+  }
+
+  .container {
+    flex-direction: column;
+    /* Cambiar a disposición de columna */
+    align-items: center;
+    /* Centrar elementos horizontalmente */
+  }
+
+  .container-all {
+    width: 90%;
+    /* Ajusta el ancho al 90% en tablets */
+  }
+
+  .autos {
+    width: 33.33%;
+  }
+
+  .form-column,
+  .contact-column {
+    flex: auto;
+    /* Ocupar todo el espacio disponible */
+    padding: 0;
+    /* Eliminar el relleno entre columnas */
+  }
+
+  .mensajesList {
+    max-width: 500px;
+  }
+
+  .box {
+    width: calc(45% - 20px);
+    /* Ancho del 50% menos el espacio en tablets */
+  }
+
+  .container-alojamientos {
+    flex-direction: column;
+    /* Cambia la dirección del flexbox a columna */
+    align-items: stretch;
+    /* Ajusta la altura de los elementos hijos */
+  }
+
+  .filters,
+  .title,
+  .photos {
+    width: 100%;
+    /* Ajusta el ancho de los elementos al 100% */
+  }
+}
+
+/* Estilos para pantallas pequeñas (celular) */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 6vw;
+    /* Tamaño del texto en porcentaje del ancho de la pantalla */
+  }
+
+  h2 {
+    font-size: 4vw;
+    /* Tamaño del texto en porcentaje del ancho de la pantalla */
+  }
+
+  .contenedor-logo img {
+    width: 120px;
+    /* Ajusta el ancho del logo */
+    height: auto;
+    /* Se mantiene la proporción */
+  }
+
+  .nombre-logo {
+    font-size: 30px;
+    text-align: center;
+    transform: translate(-20%, -20%);
+  }
+
+  .nombre-logo-autos {
+    font-size: 30px;
+    text-align: center;
+    transform: translate(-20%, -20%);
+  }
+
+  .pestaña {
+    width: 30%;
+    /* Ajustar el ancho relativo para menos pestañas en línea */
+    margin-right: 5px;
+    /* Reducir el espacio entre pestañas */
+    font-size: 12px;
+  }
+
+  .container-all {
+    width: 100%;
+    /* Ajusta el ancho al 100% en teléfonos celulares */
+  }
+
+  .autos {
+    width: 100%;
+  }
+
+  .mensajesList {
+    max-width: 90%;
+  }
+
+  .box {
+    width: calc(50% - 20px);
+    /* Ancho del 50% menos el espacio en teléfonos celulares */
+  }
+
+  .container-alojamientos {
+    margin: 20px auto;
+    /* Reduce el margen superior e inferior */
+  }
+
+  footer .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+  }
+
+  .whatsapp-float i {
+    margin-top: 5px;
+    font-size: 30px;
+  }
+}
+
+/* Estilos adicionales para pantallas muy pequeñas */
+@media (max-width: 576px) {
+  .box {
+    width: calc(100% - 20px);
+    /* Ancho del 100% menos el espacio en pantallas muy pequeñas */
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/favicom.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fontsgstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-SJFTQK8xBhP1aQB+uJbhNcJ+iB+u8yl7TYO7vTyyhlpZ3p9IJz1hf13lsm0krqfuf3FCa4NhBcIUQl4E5FYlGQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/14ba23c993.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Alojamientos</title>
+</head>
+
+<body>
+
+    <header class="=header">
+        <div class="banner">
+            <img src="../static/img/Imagenes/Paisaje/buenosaires_puentedelamujer.jpeg" alt="Banner">
+
+            <div class="contenedor-logo">
+                <img src="../static/logo.png" alt="Banner" class="logo">
+                <div class="nombre-logo">Viajeros Argentinos</div>
+            </div>
+
+            <div class="pestanas">
+                <a href="../index.html" class="pestaña">Inicio</a>
+                <a href="alquiler-de-autos.html" class="pestaña">Alquiler de autos</a>
+                <a href="atracciones-turisticas.html" class="pestaña">Atracciones Turísticas</a>
+                <a href="comunidad-viajeros.html" class="pestaña">Comunidad Viajeros</a>
+                <a href="singin.html" class="pestaña">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <h1>Descubrí tu refugio perfeto</h1>
+    <h2>Explora nuestros espacios de descanso</h2>
+    <section>
+    <div class="container-alojamientos">
+        <div class="filters">
+            <h2>Filtrar destinos</h2>
+            <br><br>
+            <select id="destinationFilter">
+                <option value="">Seleccionar destino...</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Cataratas del Iguazu">Cataratas del Iguazu</option>
+                <option value="Bariloche">Bariloche</option>
+                <option value="Villa la Angostura">Villa La Angostura</option>
+            </select>
+            <select id="typeFilter">
+                <option value="">Seleccionar tipo de alojamiento...</option>
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option>
+                <option value="hotel">Hotel</option>
+            </select>
+            <input type="number" id="peopleFilter" placeholder="Cantidad de personas...">
+            <input type="date" id="dateFilter" placeholder="Fecha...">
+            <button type="submit" onclick="filterResults()">Filtrar</button>
+        </div>
+        <div class="photos">
+            <img src="../static/img/Imagenes/Paisaje/hotel.jpg" alt="Hoteles">
+            <img src="../static/img/Imagenes/Paisaje/iguazu.jpg" alt="cabañas">
+            <img src="../static/img/Imagenes/Paisaje/mendoza.jpg" alt="departamentos">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Seguinos en redes</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="bx bxl-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+            <i class="bx bxl-tiktok"></i>
+        </a>
+    </div>
+    <a href="https://wa.me/xxxxxxxxxx" class="whatsapp-float" target="_blank">
+        <i class="bx bxl-whatsapp"></i>
+    </a>
+    <p>&copy; 2024 Página de Turismo. Todos los derechos reservados.</p>
+</footer>
+
+<script src="../js/alojamientos-val.js"></script>
+</body>
+</html>
+
+
+

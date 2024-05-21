@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/favicom.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fontsgstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-SJFTQK8xBhP1aQB+uJbhNcJ+iB+u8yl7TYO7vTyyhlpZ3p9IJz1hf13lsm0krqfuf3FCa4NhBcIUQl4E5FYlGQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-Vw7VwI2cZLgnPJBwTyBDC9OCJvnBdH3tR/mIuPPy3Lf4vRHzhOiJIZv3xm9Kv2yCNfWosj0JXg70z+ljT1PphQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/14ba23c993.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Automoviles</title>
+</head>
+
+<body>
+    <header class="=header">
+        <div class="banner">
+            <img src="../static/img/Imagenes/Paisaje/rutaTafiValle.jpg" alt="Banner">
+
+            <div class="contenedor-logo">
+                <img src="../static/logo.png" alt="Banner" class="logo">
+                <div class="nombre-logo-autos">Viajeros Argentinos</div>
+            </div>
+
+            <div class="pestanas">
+                <a href="../index.html" class="pestaña">Inicio</a>
+                <a href="alojamientos.html" class="pestaña">Alojamientos</a>
+                <a href="atracciones-turisticas.html" class="pestaña">Atracciones Turísticas</a>
+                <a href="comunidad-viajeros.html" class="pestaña">Comunidad Viajeros</a>
+                <a href="singin.html" class="pestaña">Login</a>
+            </div>
+        </div>
+    </header>
+    <br><br>
+
+    <h1>La ruta es tuya: rueda hacia la ventura</h1>
+    <h2>Tu vehiculo, tu viaje: encuentra tu auto perfecto.</h2>
+    <br><br>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Quiero conducir...">
+        <button onclick="buscar()">Buscar</button>
+    </div>
+    <div id="resultados"></div>
+    <br><br>
+
+    <main>
+        <h2>DEPORTIVOS</h2>
+        <section>
+            <div class="container-autos">
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/minicooper_deportivo.jpeg" alt="Minie Cooper">
+                    <div class="info">
+                        <h3>Minie Cooper</h3>
+                        <p><i class="fas fa-user icono"></i> 2 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 305 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/ToyotaYarisGR_deportivo.jpg" alt="Toyota Yaris">
+                    <div class="info">
+                        <h3>Toyota Yaris GR</h3>
+                        <p><i class="fas fa-user icono"></i> 2 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 400 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/fordmustang_deportivos.png" alt="Ford Mustang">
+                    <div class="info">
+                        <h3>Ford Mustang</h3>
+                        <p><i class="fas fa-user icono"></i> 2 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 541 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/chevrolel_camaro_deportivos.jpg" alt="Chevrolet Camaro">
+                    <div class="info">
+                        <h3>Chevrolet Camaro</h3>
+                        <p><i class="fas fa-user icono"></i> 2 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 562 km</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <h2>AUTOS PEQUEÑOS</h2>
+        <section>
+            <div class="container-autos">
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/Gol_pequeños.jpg" alt="Volkswagen Gol">
+                    <div class="info">
+                        <h3>Volkswagen Gol</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 887 km.</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/peugeot_206_pequeños.jpg" alt="Peugeot 206">
+                    <div class="info">
+                        <h3>Peugeot 206</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 714 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/Volkswagen_up_pequeño.JPG" alt="Volkswagen UP!">
+                    <div class="info">
+                        <h3>Volkswagen UP!</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 665 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/Renault_Sandero_pequeño.jpg" alt="Renault Sandero">
+                    <div class="info">
+                        <h3>Renault Sandero</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 543 km</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2>AUTOS GRANDES</h2>
+        <section>
+            <div class="container-autos">
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/chevrolet_cobalt_grande.png" alt="Chevrolet Cobalt">
+                    <div class="info">
+                        <h3>Chevrolet Cobalt</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija mediana</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 805 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/chevrolet_prisma_grande.jpg" alt="Chevrolet Prisma">
+                    <div class="info">
+                        <h3>Chevrolet Prisma</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grandes</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija mediana</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 947 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/fiat_cronos_grandes.png" alt="Fiat Cronos">
+                    <div class="info">
+                        <h3>Fiat Cronos</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grandes</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija mediana</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 700 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/renault-symbol_grande.jpg" alt="Renault Symbol">
+                    <div class="info">
+                        <h3>Renault Symbol</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grandes</p>
+                        <p><i class="fas fa-suitcase icono"></i> 1 valija mediana</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 609 km</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2>SUV</h2>
+        <section>
+            <div class="container-autos">
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/ecoespor_suv.jpg" alt="Ford EcoSport">
+                    <div class="info">
+                        <h3>Ford EcoSport</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 620 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/hondaCRV_SUV.jpg" alt="Honsa CRV">
+                    <div class="info">
+                        <h3>Honda CRV</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 500 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/toyotarap4_suv.png" alt="Toyota RAV4">
+                    <div class="info">
+                        <h3>Toyota RAV4</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 1000 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/SanderoStepway_suv.png" alt="Sandero Stepway">
+                    <div class="info">
+                        <h3>Renault Sandero Stepway</h3>
+                        <p><i class="fas fa-user icono"></i> 5 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 2 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 520 km</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2>PICK UP</h2>
+        <section>
+            <div class="container-autos">
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/fordmaverick_camioneta.jpg" alt="Ford Maverick">
+                    <div class="info">
+                        <h3>Ford Maverick</h3>
+                        <p><i class="fas fa-user icono"></i> 4 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 4 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 800 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/ToyotaHilux_camioneta.jpg" alt="Toyota Hilux">
+                    <div class="info">
+                        <h3>Toyota Hilux</h3>
+                        <p><i class="fas fa-user icono"></i> 4 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 4 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 630 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/nissanfrontier_camioneta.jpg" alt="Nissan Frontier">
+                    <div class="info">
+                        <h3>Nissan Frontier</h3>
+                        <p><i class="fas fa-user icono"></i> 4 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 4 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 880 km</p>
+                    </div>
+                </div>
+                <div class="autos">
+                    <img src="../static/img/Imagenes/FotoAutos/renaultalaskan_camionetas.jpg" alt="Renault Alaskan">
+                    <div class="info">
+                        <h3>Renault Alaskan</h3>
+                        <p><i class="fas fa-user icono"></i> 4 personas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas grande</p>
+                        <p><i class="fas fa-suitcase icono"></i> 3 valijas medianas</p>
+                        <p><i class="fas fa-suitcase icono"></i> 4 valijas chicas</p>
+                        <p><i class="fas fa-road icono"></i> Autonomía: 740 km</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Seguinos en redes</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="bx bxl-facebook-square"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <i class="bx bxl-tiktok"></i>
+            </a>
+        </div>
+        <a href="https://wa.me/xxxxxxxxxx" class="whatsapp-float" target="_blank">
+            <i class="bx bxl-whatsapp"></i>
+        </a>
+        <p>&copy; 2024 Página de Turismo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

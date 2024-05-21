@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- contiene metadatos sobre el documento HTML, 
+            como el título de la página, las etiquetas meta y 
+            los enlaces a archivos CSS y fuentes. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/favicom.ico" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-SJFTQK8xBhP1aQB+uJbhNcJ+iB+u8yl7TYO7vTyyhlpZ3p9IJz1hf13lsm0krqfuf3FCa4NhBcIUQl4E5FYlGQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/14ba23c993.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/stylesingin.css">
+    <title>Inicio de Sesion</title>
+</head>
+
+<body>
+    <!-- Enlaces a otras páginas -->
+    <a href="../index.html" class="back-to-index">Inicio</a>
+    <!-- Envuelve todo el contenido -->
+
+    <div class="wrapper">
+        <!-- formulario -->
+        <form id="loginForm" action="#" onsubmit="return validateForm()">
+            <h1>Login</h1>
+            <!-- contenedor usuario -->
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <i class="bx  bxs-user"></i>
+            </div>
+            <!-- contenedor contraseña -->
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <i class="bx  bxs-lock-alt"></i>
+            </div>
+
+            <!-- contenedor Rememberme -->
+            <div class="remember-forgot">
+                <label><input type="checkbox">Recuerdame</label>
+                <a href="../templates/recuperacionpss.html">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <!-- boton de envio de formulario -->
+            <button type="submit" class="btn">Entrar</button>
+            <br><br>
+
+            <hr class="divider">
+            <!-- Contenedor inicio de sesion con redes sociales -->
+            <p>O inicia sesion con</p>
+            <div class="social-icons">
+                <a
+                    href="https://www.facebook.com/v12.0/dialog/oauth?client_id=TU_ID_DE_APP&redirect_uri=URL_DE_REDIRECT&scope=email">
+                    <i class="bx bxl-facebook-square"></i>
+                </a>
+                <a href="https://api.twitter.com/oauth/authorize?oauth_token=TU_TOKEN_DE_APP">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a
+                    href="https://api.instagram.com/oauth/authorize?client_id=TU_ID_DE_APP&redirect_uri=URL_DE_REDIRECT&scope=user_profile,user_media">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a
+                    href="https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=TU_CLIENT_ID&redirect_uri=URL_DE_REDIRECT&scope=email%20profile&access_type=offline">
+                    <i class="bx bxl-google"></i>
+                </a>
+            </div>
+
+            <hr class="divider">
+            <!-- enlace a registro -->
+            <div class="register-link">
+                <p>¿No tienes cuenta? <a href="../templates/register.html"> Registrate Ahora</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- validaciones con JavaScript -->
+    <script src="../js/singin-val.js"></script>
+
+</body>
+
+</html>

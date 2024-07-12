@@ -1,0 +1,95 @@
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    padding: 20px;
+}
+
+/* Estilos para la sección de gestión */
+
+#gestion {
+    background-color:#6af199; /* Color de fondo */
+    padding: 40px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.gestion-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-accion {
+    flex-basis: calc(50% - 10px); /* Ancho de cada campo de formulario */
+    margin-bottom: 10px; /* Espacio entre los campos */
+}
+
+.form-accion label {
+    display: block; /* Mostrar las etiquetas en bloque */
+    margin-bottom: 5px; /* Espacio bajo la etiqueta */
+    color: #333; /* Color del texto */
+}
+
+.form-accion input {
+    width: 100%; /* Ancho del input */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.btn-agregar {
+    background-color: #ff8c92; /* Color de fondo del botón */
+    color: #030303; /* Color del texto del botón */
+    padding: 15px 30px; /* Aumentar el espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 10px; /* Espacio superior */
+    display: block; /* Hacer el botón un elemento de bloque */
+    width: 50%; /* Ancho del botón */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.btn-agregar:hover {
+    background-color:  #fbb4ae; /* Color de fondo del botón al pasar el mouse */
+}
+
+
+/* Estilos para la sección de listado */
+#list {
+    background-color: #96e9f7; /* Color de fondo */
+    padding: 40px 0; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Colapsar bordes de las celdas */
+    margin-top: 20px; /* Espacio superior */
+    font-family: 'Nunito', sans-serif; /* Fuente para el texto */
+}
+
+.table th,
+.table td {
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border: 1px solid #fff; /* Borde de las celdas */
+    color: #333; /* Color del texto */
+}
+
+.table th {
+    background-color: #fff; /* Color de fondo del encabezado */
+    border-bottom: 2px solid #ddd; /* Borde inferior del encabezado */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Color de fondo para filas impares */
+}
+
+.table tbody tr:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse sobre la fila */
+}
